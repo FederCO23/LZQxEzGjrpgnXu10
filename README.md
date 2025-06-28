@@ -1,6 +1,6 @@
 ## Customers Satisfaction Study - Predicting Satisfaction from Survey Data
 
-The goal of this project was to analyze and model customer satisfaction from a app based logistic company based on a real survey responses using machine learning techniques. The project demonstrates practical skills in data preprocessing, feature engineering, model selection, evaluation, and communication of business insights.
+The goal of this project was to analyze and model customer satisfaction from a app based logistic company based on a real survey responses using machine learning techniques. The project presents practical skills in data preprocessing, feature engineering, model selection, evaluation, and communication of business insights.
 This project was completed as part of the Apziva Program. 
 
 ---
@@ -17,23 +17,25 @@ This project was completed as part of the Apziva Program.
 ## Project Workflow
 
 ### 1. Exploratory Data Analysis (EDA)
+[Dataset](./ACME-HappinessSurvey2020.csv) 
+
 - Assessed class balance, feature distributions, and potential correlations.
 - Calculate the Mutual Information and Chi-Squared scores indentifing the more predictive or informative features for the possitive prediction.
 
 ### 2. Feature Engineering
 - Created and tested a large group of new features, including:
-- Weighted sum for the strongest contributors: X_1_5_6_weighted
-- Binary indicators: e.g., X1_is_5, X6_is_5
-- Binary flags: e.g., X2_dissappointed, X4_bad_price
-- Aggregated features such as X_avg_all and num_fives.
+- Weighted sum for the strongest contributors: `X_1_5_6_weighted`
+- Binary indicators: e.g., `X1_is_5`, `X6_is_5`
+- Binary flags: e.g., `X2_dissappointed`, `X4_bad_price`
+- Aggregated features such as `X_avg_all` and `num_fives`.
 
 ### 3. Model Training
-- Compared multiple classifiers (27 models): NuSVC, ExtraTreesClassifier, RandomForestClassifier, and more using the Lazypredict library.
+- Compared multiple classifiers (27 models): **NuSVC**, **ExtraTreesClassifier**, **RandomForestClassifier**, and more using the Lazypredict library.
 - Experiment with hyperparameters optimization and evaluated performance through cross-validation accuracy.
 
 ### 4. Evaluation Strategy
 - Performed exhaustive feature selection considering Mutual Information and Chi-Square Scores, and also Partial Dependence on Prediction.
-- Measured accuracy over a fixed train/test split using all the combinations between the best 6 performing models with all the possible groups of features between a sub-selection of 4 to 10 features from the 12 feature selection. This 'brute-force' approach has been chossen because the dataset was limited and the training time was very quick.
+- Measured accuracy over a fixed train/test split using all the combinations between the best 6 performing models with all the possible groups of features between a sub-selection of 4 to 10 features from the intermediary 12 feature selection. This *brute-force* approach has been chossen because the dataset was limited and the training time was very quick.
 - Using cross-validations accuracy over 5 stratified folds, measured average accuracy and variance to ensure model robustness, where we evaluate the performance of the 14 best performing pair of models and group of selected features.
 - Identified top-performing combinations with highest predictive power.
 
