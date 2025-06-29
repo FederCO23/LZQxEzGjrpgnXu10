@@ -1,8 +1,18 @@
+<table>
+  <tr>
+    <td>
+
 ## Customers Satisfaction Study - Predicting Satisfaction from Survey Data
 
 The goal of this project was to analyze and model customer satisfaction from a app based logistic company based on a real survey responses using machine learning techniques. The project presents practical skills in data preprocessing, feature engineering, model selection, evaluation, and communication of business insights.
 This project was completed as part of the Apziva Program. 
 
+</td>
+    <td>
+      <img src="images/banner.png" alt="Food Delivery App Promo" width="2500">
+    </td>
+  </tr>
+</table>
 ---
 
 ## Project Summary
