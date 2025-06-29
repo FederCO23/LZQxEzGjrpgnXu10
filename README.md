@@ -1,19 +1,28 @@
+## Customer Satisfaction Study – Predicting Satisfaction from Survey Data
+
 <table>
   <tr>
-    <td>
+    <td style="vertical-align: top; padding-right: 20px; line-height: 1.6; font-size: 16px;">
 
-## Customers Satisfaction Study - Predicting Satisfaction from Survey Data
+<b>The goal of this project</b> was to analyze and model customer satisfaction for an app-based logistics company, based on real survey responses using machine learning techniques.  
 
-The goal of this project was to analyze and model customer satisfaction from a app based logistic company based on a real survey responses using machine learning techniques. The project presents practical skills in data preprocessing, feature engineering, model selection, evaluation, and communication of business insights.
-This project was completed as part of the Apziva Program. 
+This study showcases:
+- Data preprocessing  
+- Feature engineering  
+- Model selection & evaluation  
+- Communication of business insights
+
+<br>
+
+<b>This project was completed as part of the Apziva ML Program.</b>
 
 </td>
-    <td>
-      <img src="images/banner.png" alt="Food Delivery App Promo" width="2500">
+    <td style="text-align: center;">
+      <img src="images/banner.png" alt="Food Delivery App Promo" width="2300">
     </td>
   </tr>
 </table>
----
+
 
 ## Project Summary
 
@@ -55,12 +64,29 @@ This project was completed as part of the Apziva Program.
 
 ### 6. Key Results
 
-| Model                 | Top Features Used                                 | Accuracy (%) | Cross-Validated Accuracy (Mean±Std) |
-|----------------------|----------------------------------------------------|--------------|-------------------------------------|
-| ExtraTreesClassifier | [X1, X3, X6, X1_is_5, X6_is_5, num_fives]          | 76.9         | 0.682 ± 0.044                        |
-| RandomForestClassifier | [X1, X3, X6, X1_is_5, X6_is_5, num_fives]                                | 76.9            | 0.674 ± 0.047                        |
+<table>
+  <tr style="background-color: #f0f0f0;">
+    <th>Model</th>
+    <th>Top Features Used</th>
+    <th style="text-align: center;">Accuracy (%)</th>
+    <th style="text-align: center;">Cross-Validated Accuracy (Mean±Std)</th>
+  </tr>
+  <tr style="background-color: #ffffff;">
+    <td>ExtraTreesClassifier</td>
+    <td style="font-size: 14px;">[X1, X3, X6, X1_is_5, X6_is_5, num_fives]</td>
+    <td style="text-align: center;">76.9</td>
+    <td style="text-align: center;">0.682 ± 0.044</td>
+  </tr>
+  <tr style="background-color: #ffffff;">
+    <td>RandomForestClassifier</td>
+    <td style="font-size: 14px;">[X1, X3, X6, X1_is_5, X6_is_5, num_fives]</td>
+    <td style="text-align: center;">76.9</td>
+    <td style="text-align: center;">0.674 ± 0.047</td>
+  </tr>
+</table>
 
-*Note: The top-performing sets share critical features, confirming their predictive strength.*
+<p><i>Note: The top-performing sets share critical features, confirming their predictive strength.</i></p>
+
 
 ---
 
